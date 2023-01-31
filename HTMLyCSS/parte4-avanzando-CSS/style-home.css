@@ -1,0 +1,261 @@
+/* usar id para alterar comportamientos y class para el atear estilos*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width:80%;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+nav{
+    position: absolute;
+    top:110px; /* valor aproximado a la mitad del alto de la imagen que se encuntra ya en la pagina en header */ 
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-size: 20px;
+    color:#000000;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/*
+main > p{
+    background: red;
+}       
+
+img + p{
+    background: yellow;
+}
+
+
+img ~ p{
+    background: green;
+}
+
+.principal p:not(#mision){
+    background:blue;
+}
+
+
+.titulo-principal{
+    padding-left: 30px;
+}*/
+
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.banner{
+    width: 100%; /* opcion responsive no importa el tamanio de la pagina la imagen simepre se vera completa*/
+}
+
+.principal{
+    background: #FEFEFE;
+    padding:  3em 0;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+    text-shadow: 2px 2px 10px black;
+    /*height: 150px;
+    color: rgba(0,0,0,0.3); se seleccion a el color y adiconal el 4to parametro indica la opacidad
+    border: 10px solid #000000;
+    padding: 20px;
+    */
+}
+
+/*seudo elementos
+.titulo_principal:first-letter{
+    font-weight: bold;
+}
+
+p:first-line{
+    font-style: italic;
+}
+
+.titulo_principal:before{
+    content:"[";
+}
+
+.titulo_principal:after{
+    content:"]";
+}
+fin seudo elementos*/
+
+.principal p{
+    margin: 0 0 1em;
+    text-align: left;
+    padding: 0 5px;
+    width:85%;
+    text-size-adjust: center;
+        
+    
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width:120px;
+    float:left;
+    margin: 0 20px 20px 250px;
+}
+
+
+
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+    background: linear-gradient(#fefefe,#888888);
+    /*
+    background: linear-gradient(180deg,yellow 40%,blue,red);
+    background: radial-gradient(yellow 40%,blue,red);
+    */
+}
+
+.mapa_contenido{
+    width:1040px;
+    /*width: cal(40%- (26px));  se adapta a cualquier tamanho de pantalla*/
+    margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.diferenciales{
+    background: #888888; /*o puede ser #ffffff*/
+    padding: 3em 0;
+    /*\
+    box-shadow: inset 0 0 100px red;
+    */
+    
+}
+
+
+.items{
+    font-style: italic;
+    line-height:1.5;
+    /*font-size: 20px;*/
+}
+
+.items::before{
+    content: "✯ ";
+}
+
+.items:nth-child(1) { /*fist-child(primer item)   last-child(ultimo item)*/
+    font-weight: bold;
+}
+
+.diferenciales ul{
+    display: inline-block;/*ya no  unase la fomra bloque entero del tag ul sino que su largo dependera del contenido dentro de esta*/
+    vertical-align: top;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.contenido_diferenciales{
+    width: 840px;
+    margin: 0 auto;
+}
+
+.lista_diferenciales{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagen-diferenciales{
+    width: 50%;
+    transition: 400ms;
+    box-shadow: 10px /*DERECHA POSITIVO IZ NEGATIVO*/ 10px /*abajo POSITIVO arriba NEGATIVO*/ 30PX /*difuminado*/  15px /*sprit o expancion*/ black
+    
+    /*
+    , -10px -10px yellow;   
+    */
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+    
+}
+.videobg{
+    background:#888888
+}
+.video{
+    width: 560px;
+    margin: 1em auto 2em auto;
+    background:#888888 ;
+}
+
+footer{
+    background:url(/parte4-avanzando-CSS/img/bg.jpg); /*se importa imagen como background*/
+    text-align:center;
+    
+    
+    padding: 40px; /*margen de la imagen en este caso */
+    
+}
+.copyright{
+    color:white;
+    font-style:Arial;
+    font-size:13px;
+    margin:20px; /*margen de!!*/
+    
+}
+/*
+@media screen and (max-width: 480px){
+    h1{
+        text-align:center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .utensilios{
+        text-align: center;
+    }
+    .caja,.principal,.mapa_contenido,.contenido_diferenciales,.video{
+        width: auto;
+    }
+
+    .lista_diferenciales, .imagen-diferenciales{
+        width:100%;
+    }
+    
+}
+*/

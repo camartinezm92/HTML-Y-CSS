@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- version del documento tipo HTML en este caso esta es la version 5 la cual se escribe de la froma declarada-->
+<html lang="es"> <!--aca empieza el html y lenguaje de la pagina es -->
+    <head><!-- encabezado de la pagina-->
+        <meta charset="UTF-8"> <!-- se define el diccionario a usartipo de escritura usada identifica las ñ y las tildes-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tome todos los estilos dle archivo CSS estableciendo en la ruta href-->
+        <title>Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="/parte4-avanzando-CSS/style-home.css"> <!-- Tome todos los estilos dle archivo CSS estableciendo en la ruta href-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body> <!-- contanido de la pagina-->
+        <header>
+            <div class="caja">
+                <h1><img class="logo" src="/parte2-HTML5 y CSS3/img/logo.png" alt="logo de la barbaria alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="/parte4-avanzando-CSS/home.html">Home</a></li>
+                        <li><a href="/parte2-HTML5 y CSS3/productos.html">Products</a></li>
+                        <li><a href="/parte3-HTML5-CSS3-tablasyformularios/contacto.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <img class='banner' src="img/banner.jpg"> <!--identicamos la imagen y la llamamos-->
+           
+            <section  class="principal">
+                
+                    <h2 class="titulo_principal">Sobre la Barbería Alura</h2>
+
+                    <img src="/parte4-avanzando-CSS/img/utensilios.jpg" class="utensilios" alt="Utensilios de un Barbero">
+                    
+                    <p>Ubicada en el corazón de la ciudad, la<strong>  Barbería Alura </strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. 
+                    </p>
+                    
+                    <p id ='mision'><em>Nuestra misión es:<strong> "Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+                    
+                    <p >Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+                </section>
+                
+                <section class="mapa">
+                    <h3 class="titulo_principal">Nuestra Ubicacion</h3>
+                    <p>Nuestro Establecmiento esta ubicado en el corazon de la Ciudad</p>
+                    <div class="mapa_contenido">
+                        <iframe class="mapaimg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5171.01037672579!2d-46.635200522385354!3d-23.587955687462568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses-419!2sco!4v1674162440502!5m2!1ses-419!2sco" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+                
+                <section class="diferenciales"> <!-- Genera divisiones esta clase se llama diferenciales para css-->
+                    <h3 class="titulo_principal">Diferenciales</h3>
+                    <div class="contenido_diferenciales">
+                        <ul class="lista_diferenciales"> 
+                            <li class="items">Atencion personalizada a los clientes</li>
+                            <li class="items">Espacio Diferenciado</li>
+                            <li class="items">Localizacion</li>
+                            <li class="items">Profesionales calificados</li>
+                            <li class="items">Puntualidad</li>
+                            <li class="items">Limpieza</li>
+                        </ul><img src="img/diferenciales.jpg" class="imagen-diferenciales">
+                    </div>
+                    <div class="video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    
+                </section>
+
+        </main>
+        <footer>
+            <img src="/parte2-HTML5 y CSS3/img/logo-blanco.png" alt="logo de la barbaria alura">
+            <p class="copyright"> &copy Copyright Barberia Alura - 2020</p>
+        </footer>
+    </body>
+</html>

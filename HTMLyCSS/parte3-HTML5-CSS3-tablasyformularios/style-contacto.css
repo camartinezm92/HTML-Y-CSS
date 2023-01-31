@@ -1,0 +1,166 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width:80%;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+nav{
+    position: absolute;
+    top:110px; /* valor aproximado a la mitad del alto de la imagen que se encuntra ya en la pagina en header */ 
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-size: 20px;
+    color:#000000;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width:940px;
+    /*position: relative;*/
+    margin: 0 auto;
+    padding: 50px; /*margen entre la lista y el resto de la infomacion en todas las direcciones*/
+}
+.productos li{
+    display: inline-block; /*se alinea la liste de forma horizontal */
+    text-align: center; /* texto al centro*/
+    width: 30%;
+    vertical-align: top;  
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: 'black';
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px 20px 20px 20px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+    border-radius: 30px;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos li:active{
+    border-color: green;
+}
+.productos h2{
+    font-size:30px;
+    font-weight: bold;
+   
+}
+
+.producto-descripcion{
+    font-size:18px;
+}
+
+.producto-precio{
+    font-size:20px;
+    font-weight:bold;
+    margin-top :10px; /*realiza una separacion en la pater superior de la clase seleccionada*/
+}
+
+footer{
+    background:url(/parte4-avanzando-CSS/img/bg.jpg); /*se importa imagen como background*/
+    text-align:center;
+    
+    
+    padding: 40px; /*margen de la imagen en este caso */
+    
+}
+.copyright{
+    color:white;
+    font-style:Arial;
+    font-size:13px;
+    margin:20px; /*margen de!!*/
+    
+}
+
+main{
+   width:80% ;
+   margin:0 auto;
+
+}
+
+form{
+    margin:40px 0
+}
+
+form label,form legend{
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+
+.enviar{
+    width: 35%;
+    padding: 15px 0;
+    font-size:18px;
+    font-weight: bold;
+    background:blue;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    transform: scale(1.10) ; /*rotate(10deg)*/
+    background:darkblue;
+}
+
+table{
+    
+    font-style: Arial;
+    margin:40px 40px;
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+    
+
+}
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}

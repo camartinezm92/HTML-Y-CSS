@@ -1,0 +1,71 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.titulo-principal{
+    padding-left: 30px;
+}
+p{ /*selectores*/
+    text-align: center;
+    
+}
+#banner{
+    width: 100%; /* opcion responsive no importa el tamanio de la pagina la imagen simepre se vera completa*/
+}
+.titulo-centralizado{
+    text-align: center;
+    /*height: 150px;
+    border: 10px solid #000000;
+    padding: 20px;
+    margin: 40px;*/
+}
+
+/*body{
+     /* codigo tipo rgb(2,25,100); Codigo hexadecimal ff0000 rojo
+    ALFABETOS
+    A,B,C,D,E.... ALFABETO 
+    0,1,2,3,4,5,6,7,8,9 NUMERAL
+    0,1  BINARIO
+    0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F HEXADECIMAL
+    AYUDA A BRINDAR UNA MAYOR AGILIDAD Y MENOR PESO EN CARGA DE DATOS
+    
+    HEXEDACIMAL EN RGB
+    
+    ---- --
+    RRGGBB*
+}*/
+
+em strong{ /* sr tiene una etiqueta padre em y luego un strong por ello unicamente se agregara esta caracacteristica al parrafo con esas cualidades*/
+    color:red;
+}
+
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+
+#mision{ /*el # indica el id de en este caso el parrafo que se desea modificar*/
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: white; /*o puede ser #ffffff*/
+    padding: 30px;
+    
+}
+
+
+.items{
+    font-style: italic;
+    /*font-size: 20px;*/
+}    
+
+ul{
+    display: inline-block;/*ya no  unase la fomra bloque entero del tag ul sino que su largo dependera del contenido dentro de esta*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
